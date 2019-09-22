@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html style="font-size: 17px ">
+<head>
+	<title>Checkout</title>
+	<style>
+		*{
+			font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+		}
+		.p1{
+			font-size: 1.25rem;
+			width: 960px;
+			height: 120	px;
+			margin-bottom: 16px;
+			margin-top: 0;
+			font-weight: 300;
+		}
+		#divRoot{
+			margin-top: 50px;
+		}
+		#div1{
+			
+			float:left;
+			width: 40%;
+			margin-left: 15%;
+		}
+		#div2{
+			float: right;
+			width: 30%;
+			margin-right: 10%;
+		}
+		.label1{
+			margin-bottom: 0.5rem;
+		}
+		.input1{
+			display: block;
+			border-radius: 0.25rem;
+			border: 1px solid #ced4da;
+			height: 1.75rem;
+			padding: 0.175rem 0.55rem 0.175rem 0.55rem;
+		}
+		.select1{
+			color: #495057;
+
+		}
+		.inputCheckBox{
+			width: 20px;
+			height: 20px;
+			display: block;
+			float: left;
+		}
+		.labelButton{
+			color: #212529;font-weight: 400;
+		}
+		.inputRadio{
+			width: 20px;
+			height: 20px;
+		}
+		#button1{
+			color: #fff;
+		    background-color: #0069d9;
+		    border-color: #0062cc;
+		    padding: .5rem 1rem;
+		    font-size: 1.25rem;
+		    line-height: 1.5;
+		    border-radius: .3rem;
+		    width: 100%;
+		}
+		.line1{
+			border:1px solid rgba(0,0,0,.125);
+			box-sizing: border-box;
+			padding: 12px 20px 20px 20px;
+			line-height: 1px;
+			float: left;
+			width: 100%;
+			background-color: white;
+			font-weight: 500;
+		}
+		#promoCode{
+			border:1px solid rgba(0,0,0,.125);
+			width: 100%;
+			background-color: white;
+			float: left;
+			margin-top: 30px;
+			border-radius: 5px;
+			padding: 12px 20px 12px 20px;
+			box-sizing: border-box;
+		}
+		a{
+			text-decoration: none;
+			color: blue;
+		}
+	</style>
+</head>
+<body style="background-color: #f8f9fa">
+	<img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" style="margin-left: auto;margin-right: auto;display: block;margin-top: 50px;width: 72px;height: 72px;border-radius: 4px">
+	<h1 align="center" style="margin-bottom: 8px">Checkout form</h1>
+	<div align="center"><p class="p1">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p></div>
+	<div id="divRoot">
+		<div id="div1">
+			<h2>Billing adress</h2>
+			<div style="float: left; width: 50%"><p class="label1">First name</p><input size="35%" class="input1"></div>
+			<div style="float: right; width: 50%"><p class="label1">Last name</p><input size="35%" class="input1"></div>
+			<div style="float: left;"><p>Username</p><p class="input1" style="float: left;background-color: grey;font-size: 1.25rem;margin-top: 0px;border-top-right-radius: 0px!important;border-bottom-right-radius: 0px;
+			background-color: #e9ecef;color: #495057">@</p><input placeholder="Username" class="input1" size="73.8%" style="margin-top:21.5px;float: left;margin-top: 0px;border-top-left-radius: 0px!important;border-bottom-left-radius: 0px;"></div>
+			<div style="float: left;"><p>Email<span style="color: #6c757d"> (Optional)</span></p><input class="input1" size="80.5%" placeholder="you@example.com"></div>
+			<div style="float: left;"><p>Adress</p><input class="input1" size="80.5%" placeholder="1234 Main st"></div>
+			<div style="float: left;"><p>Adress 2<span style="color: #6c757d"> (Optional)</span></p><input class="input1" size="80.5%" placeholder="Aparment or suite"></div>
+			<div style="float: left; width: 100%">
+
+				<div style="float: left;">
+					<p>Country</p>
+					<select class="input1 select1" style="width: 200px">
+						<option>Choose...</option>
+						<option>America</option>
+					</select>
+				</div>
+
+				<div style="float: left;margin-left: 30px">
+					<p>State</p>
+					<select class="input1" style="width: 170px">
+						<option>Choose...</option>
+						<option>California</option>
+					</select>
+				</div>
+
+				<div style="float: right;">
+					<p>Zip</p>
+					<input class="input1" style="width: 100px;box-sizing: border-box;">
+				</div>
+			</div>
+			<div style="width: 100%;float: left;margin-top: 20px">
+				<hr style="margin-bottom: 15px;">
+				<input type="checkbox" class="inputCheckBox"><label class="labelButton">Shipping address is the same as my billing address
+				</label>
+
+			</div>
+			<div style="width: 100%;float: left;margin-top: 20px"><input type="checkbox" class="inputCheckBox"><label style="color: #212529;font-weight: 400;display: block;">Save this information for next time</label></div>
+
+			<div style="float: left;width: 100%">
+				<hr style="margin-top: 24px">
+				<h2>Payment</h2>
+				<input type="radio" class="inputRadio"><label class="labelButton" >Credit card</label><br>
+				<input type="radio" class="inputRadio"><label class="labelButton">Debit card</label><br>
+				<input type="radio" class="inputRadio"><label class="labelButton">Paypal</label><br>
+			</div>
+			<div>
+				<div style="float: left; width: 50%"><p class="label1">Name on card</p><input size="35%" class="input1"></div>
+				<div style="float: right; width: 50%"><p class="label1">Credit card number</p><input size="35%" class="input1"></div>
+				<small style="color: #6c757d">Full name as displayed on card</small>
+			</div>
+				<div style="float: left"><p class="label1">Expiration</p><input size="13%" class="input1"></div>
+				<div style="float: left;margin-left: 25px;"><p class="label1">CVV</p><input size="13%" class="input1"></div>
+			<div>
+				<hr style="margin-top: 120px; ">
+				<button id="button1" style="margin-top: 20px">Countinue to checkout</button>
+			</div>
+		</div>
+		
+
+		<div id="div2">
+			<div><h2 style="color: #6c757d;float: left;">Your cart</h2><span style="float: right;margin-top: 0.75rem;border:3px solid grey;border-radius: 2rem;padding: 3px 16px 3px 16px;background-color: grey;font-size: 1.5rem;color:white">3</span>
+			</div>
+			<div class="line1" style="border-top-left-radius: 0.25rem;border-top-right-radius: 0.25rem">
+				<div style="float: left;"><p>Product name</p><small style="color: #6c757d">Brief description</small></div>
+				<p style="color:#6c757d;float: right; ">$12</p>
+			</div>
+			<div class="line1">
+				<div style="float: left;"><p>Seccond product</p><small style="color: #6c757d">Brief description</small></div>
+				<p style="color:#6c757d;float: right; ">$8</p>
+			</div>
+			<div class="line1">
+				<div style="float: left;"><p>Third item</p><small style="color: #6c757d">Brief description</small></div>
+				<p style="color:#6c757d;float: right; ">$5</p>
+			</div>
+			<div class="line1" style="background-color:#f8f9fa!important">
+				<div style="float: left;"><p style="color: #28a745">Promo code</p><small style="color: #28a745">EXAMPLECODE</small></div>
+				<p style="color:#28a745;float: right; ">$5</p>
+			</div>
+			<div class="line1" style="padding-bottom: 5px!important">
+				<div style="float: left;font-weight: 400!important;"><p>Total(USD)</p></div>
+				<p style="float: right;font-weight: bold; ">$20</p>
+			</div>
+			<div id="promoCode">
+				<input placeholder="Pomo code" class="input1" style="float: left;width: 82%!important;box-sizing: border-box;border-top-right-radius: 0px!important;border-bottom-right-radius: 0px!important;"><button style="float: right;width: 18%!important;box-sizing: border-box;color: white;background-color: #6c757d;border-color: #6c757d;border-top-right-radius:5px;border-bottom-right-radius: 5px;height: 29px" type="submit">Redeem</button>
+			</div>
+		</div>
+	</div>
+	<div id="bottom" style="width: 100%;display: block;text-align: center;margin-top: 1400px;margin-bottom: 50px">
+		<div>
+			<p style="color: #6c757d">© 2017-2019 Company Name</p>
+			<a href="">Privacy</a>
+			<a href="" style="margin: 0px 12px 0px 12px">Terms</a>
+			<a href="">Support</a>
+		</div>
+	</div>	
+</body>
+</html>
